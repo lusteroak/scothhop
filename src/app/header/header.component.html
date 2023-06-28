@@ -13,11 +13,62 @@
 </div>
 <div [className]="isMenuNavOpen ? 'header__navigation__menu open' : 'header__navigation__menu'">
     <nav class="header__navigation__menu__elements">
-        <ul>
-            <li>Products</li>
-            <li>Customers</li>
-            <li>Pricing</li>
-            <li>Learn</li>
-        </ul>
+        <mat-expansion-panel [class.mat-elevation-z0]="true" class="header__navigation__menu__elements">
+            <mat-expansion-panel-header>
+                Products
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+                <a mat-list-item routerLink="#">
+                    <span>For Freelancers</span>
+                </a>
+                <a mat-list-item routerLink="#">
+                    <span>Small Business</span>
+                </a>
+                <a mat-list-item routerLink="#">
+                    <span>Bill Pay</span>
+                </a>
+                <a mat-list-item routerLink="#">
+                    <span>Invoicing</span>
+                </a>
+                <a mat-list-item routerLink="#">
+                    <span>Flow</span>
+                </a>
+                <a mat-list-item routerLink="#">
+                    <span>Integrations</span>
+                </a>
+            </mat-nav-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel disabled>
+            <mat-expansion-panel-header>
+                Customers
+            </mat-expansion-panel-header>
+        </mat-expansion-panel>
+        <mat-expansion-panel disabled>
+            <mat-expansion-panel-header>
+                Pricing
+            </mat-expansion-panel-header>
+        </mat-expansion-panel>
+        <mat-expansion-panel [class.mat-elevation-z0]="true">
+            <mat-expansion-panel-header>
+                Learn
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+                <a mat-list-item routerLink="#">Spring</a>
+                <a mat-list-item routerLink="#">Hibernate</a>
+                <a mat-list-item routerLink="#">Struts</a>
+            </mat-nav-list>
+        </mat-expansion-panel>
     </nav>
+</div>
+<div [className]="isMenuNavOpen ? 'header__navigation__menu open' : 'header__navigation__menu'">
+    <div class="header__login">
+        <div class="header__login__section">
+            <div class="get__started">
+                <p>Get Started</p>
+            </div>
+            <div class="login__button">
+                <p>Login</p>
+            </div>
+        </div>
+    </div>
 </div>

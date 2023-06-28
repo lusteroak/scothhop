@@ -37,7 +37,6 @@ html {
   display: none;
   &.open {
     display: block;
-    transition-duration: 0.25s;
     ul {
         list-style-type: none;
         padding: 0;
@@ -58,3 +57,30 @@ html {
   
 }
 /* Top Navigation Menu End */
+/* Register & Login */
+.header__login {
+  padding: 20px 10px 0 10px;
+}
+.header__login__section {
+  display: flex;
+  flex-direction: column;
+  .login__button, .get__started {
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+  .login__button, .get__started > p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .login__button{
+    color: #000;
+    background-color: #fff;
+    
+    border: 1px solid #000;
+  }
+  .get__started {
+    color: #fff;
+    background-color: #000;
+  }
+}
+/* Register & Login End */
